@@ -1,8 +1,10 @@
+# Periodicity in Exponential Function Differences
+
 Author: Joel B. Mohler
+
 Date: 2022-11-28
 
-
-# Abstract
+## Abstract
 
 The taylor series $\sum_{m=0}^{\infty} \frac{x^{a_m}}{{a_m}!}$ is convergent
 for set of terms identified by ${a_m}$ an infinite increasing sequence of
@@ -12,7 +14,7 @@ progression with common difference $d$ and first term $a_0<d$, then the
 function $f(x)$ defined by this taylor series is it's own $d^{\textrm{th}}$
 derivative.
 
-# Self Derivative Series
+## Self Derivative Series
 
 Define the function $\mathcal{G}_{d}^{i}$ with $d\geq 1$ and $0\leq i<d$ to be
 the $i-th$ offset Taylor series as 
@@ -41,7 +43,7 @@ the taylor series expansion we verify the claim of the abstract that
 $f^{(d)}=f$.  So also we can verify the familiar claims of the above functions
 being their own first, second and fourth derivatives respectively.
 
-# Other functions
+## Other functions
 
 If you graph the families $\mathcal{G}_d^i$ with fixed $d$ and $0\leq i<d$ we
 see that they cluster together.  In fact, it is startling looking that the
@@ -49,6 +51,8 @@ graph of the $4$ functions $\mathcal{G}_4^i$ overlaid on the same graph appear
 to be equal for $x>>0$.  The startling fact being that not only are these
 functions not equal but they criss cross each other as we observe writing $\sin
 x$ and $\cos x$ as above.
+
+![$\mathcal{G}_i$ families for $i=1,2,...,7$](multi-sub-exponential.png){ width=250px }
 
 For what follows, it is sufficient to graph the taylor series truncated at $40$
 terms for $d>1$ and simply use $e^x$ for $d=1$.  Get a feel for this by
@@ -60,8 +64,13 @@ look at differences of the various $\mathcal{G}_{d}^{i}$.  The graph below is of
 the 3 functions $\mathcal{G}_3^i-\mathcal{G}_3^j$ with $0\leq i<j<3$.  Observe
 the exponential groth to the left and the exponential decay to the right.
 
+![Unscaled graph of $\mathcal{G}_3$ family](g3_family_unscaled.png){ width=250px }
+
 Now, here are these same 3 functions scaled by multiplying by $e^{x/2}$.
-Specifically $$e^{x/2}*\left(\mathcal{G}_3^i(x)-\mathcal{G}_3^j(x)\right)$$.
+Specifically
+$$e^{x/2}\left(\mathcal{G}_3^i(x)-\mathcal{G}_3^j(x)\right)\textrm{.}$$
+
+![Scaled graph of $\mathcal{G}_3$ family](g3_family_scaled.png){ width=250px }
 
 Observe in this scaled version that we can easily see the periodic zeros very
 similar to $\sin$ and $\cos$.  Numerically the zeros are spaced with common
@@ -79,6 +88,8 @@ need no scaling and are exactly periodic and mutually self-differential with a
 small caveat.  Aside from the differences for $\sin$ and $\cos$, these
 functions grow exponentially to the left.  The difference functions are
 "visually periodic" for $x>5$.
+
+![Unscaled graph of $\mathcal{G}_4$ family](g4_family_unscaled.png){ width=250px }
 
 With correct scaling for each $d\geq 5$, we observe this same sort of periodic
 behavior for $x>>0$.  The following table summarizes the numeric observation of
