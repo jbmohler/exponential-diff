@@ -99,28 +99,52 @@ precise with a periodic limiting function $\mathcal{H}_4^{i,j}$.
 
 With correct scaling for each $d\geq 5$, we observe this same sort of periodic
 behavior for $x>>0$.  The following table summarizes the numeric observation of
-required scaling and resulting pariod lengths.
+required scaling and resulting periods and amplitudes.
 
 +----+----------+----------+--------------------------------------+
 |  d |    scale |   period |                           amplitudes |
-+====+==========+==========+======================================+
-|  3 |    0.500 |    7.256 |                                1.155 |
++===:+=========:+=========:+=====================================:+
+|  3 |    0.500 |    7.256 |  1.155                               |
 +----+----------+----------+--------------------------------------+
-|  4 |       -- |   $2\pi$ |                          0.707 1.000 |
+|  4 |       -- |   $2\pi$ |  0.707 1.000                         |
 +----+----------+----------+--------------------------------------+
-|  5 |   -0.309 |    6.606 |                          0.470 0.761 |
+|  5 |   -0.309 |    6.606 |  0.470 0.761                         |
 +----+----------+----------+--------------------------------------+
-|  6 |   -0.500 |    7.255 |                    0.334 0.578 0.667 |
+|  6 |   -0.500 |    7.255 |  0.334 0.578 0.667                   |
 +----+----------+----------+--------------------------------------+
-|  7 |   -0.623 |    8.036 |                    0.248 0.447 0.557 |
+|  7 |   -0.623 |    8.036 |  0.248 0.447 0.557                   |
 +----+----------+----------+--------------------------------------+
-|  8 |   -0.707 |    8.886 |              0.191 0.354 0.462 0.501 |
+|  8 |   -0.707 |    8.886 |  0.191 0.354 0.462 0.501             |
 +----+----------+----------+--------------------------------------+
-|  9 |   -0.766 |    9.775 |              0.152 0.286 0.385 0.438 |
+|  9 |   -0.766 |    9.775 |  0.152 0.286 0.385 0.438             |
 +----+----------+----------+--------------------------------------+
-| 10 |   -0.809 |   10.690 |        0.123 0.235 0.324 0.381 0.401 |
+| 10 |   -0.809 |   10.690 |  0.123 0.235 0.324 0.381 0.401       |
 +----+----------+----------+--------------------------------------+
-| 11 |   -0.841 |   11.622 |        0.102 0.196 0.274 0.330 0.360 |
+| 11 |   -0.841 |   11.622 |  0.102 0.196 0.274 0.330 0.360       |
 +----+----------+----------+--------------------------------------+
 | 12 |   -0.866 |   12.566 |  0.086 0.165 0.235 0.288 0.322 0.333 |
 +----+----------+----------+--------------------------------------+
+
+## Remaining Questions
+
+**Question 1:**  Given $d$ can we compute the scale, period and amplitudes?
+
+I have not been able to see any precise pattern in the scaling factor as $d$
+varies beyond the general decreasing and it possibly approaches $-1$.
+
+**Question 2:**  Do the functions 
+$$
+e^{\gamma x}\left(\mathcal{G}_d^i(x)-\mathcal{G}_d^j(x)\right)
+$$
+always converge to a sinusoidal periodic function as $x\to\infty$?
+
+**Question 3:**  Does 
+$$
+\left(\sum_{n=0}^{\infty} \frac{x^{nd}}{(nd)!}\right)e^{-x}\to \frac{1}{d}
+$$
+for all $d$ as $x\to\infty$?
+
+**Question 4 (bonus):**  The abstract considered any sequence of exponents in a
+taylor series.  What kind of conditions on a sequence ${a_m}$ with
+$a_{m+1}>a_m$ enable us to make any interesting observations about
+$\sum_{m=0}^{\infty} \frac{x^{a_m}}{{a_m}!}$?

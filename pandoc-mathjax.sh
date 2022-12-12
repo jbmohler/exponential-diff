@@ -3,4 +3,4 @@
 docker run --rm \
        --volume "$(pwd):/data" \
        --user $(id -u):$(id -g) \
-       pandoc/latex --mathjax $1 -o $2
+       pandoc/latex --mathjax problem-statement.md -o problem-statement.pdf
